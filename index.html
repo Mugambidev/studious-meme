@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialApp - Connect with Friends</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <h1 class="logo">SocialApp</h1>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <nav class="nav-links">
+                    <a href="#"><i class="fas fa-home"></i></a>
+                    <a href="#"><i class="fas fa-comment"></i></a>
+                    <a href="#"><i class="fas fa-plus-square"></i></a>
+                    <a href="#"><i class="fas fa-compass"></i></a>
+                    <a href="#"><i class="fas fa-heart"></i></a>
+                    <div class="profile-pic">
+                        <img src="https://via.placeholder.com/40" alt="Profile">
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Stories -->
+            <section class="stories">
+                <div class="story">
+                    <div class="story-circle">
+                        <img src="https://via.placeholder.com/70" alt="User">
+                    </div>
+                    <span>Your Story</span>
+                </div>
+                <div class="story">
+                    <div class="story-circle">
+                        <img src="https://via.placeholder.com/70" alt="User">
+                    </div>
+                    <span>user1</span>
+                </div>
+                <div class="story">
+                    <div class="story-circle">
+                        <img src="https://via.placeholder.com/70" alt="User">
+                    </div>
+                    <span>user2</span>
+                </div>
+                <div class="story">
+                    <div class="story-circle">
+                        <img src="https://via.placeholder.com/70" alt="User">
+                    </div>
+                    <span>user3</span>
+                </div>
+                <div class="story">
+                    <div class="story-circle">
+                        <img src="https://via.placeholder.com/70" alt="User">
+                    </div>
+                    <span>user4</span>
+                </div>
+            </section>
+
+            <!-- Posts -->
+            <section class="posts">
+                <article class="post">
+                    <div class="post-header">
+                        <div class="post-user">
+                            <img src="https://via.placeholder.com/40" alt="User">
+                            <span>username</span>
+                        </div>
+                        <button class="more-options"><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+                    <div class="post-image">
+                        <img src="https://via.placeholder.com/600x600" alt="Post">
+                    </div>
+                    <div class="post-actions">
+                        <button><i class="far fa-heart"></i></button>
+                        <button><i class="far fa-comment"></i></button>
+                        <button><i class="far fa-paper-plane"></i></button>
+                        <button class="save"><i class="far fa-bookmark"></i></button>
+                    </div>
+                    <div class="post-likes">
+                        <span>1,234 likes</span>
+                    </div>
+                    <div class="post-caption">
+                        <span class="username">username</span>
+                        <span>This is a sample caption for the post. #social #webdev</span>
+                    </div>
+                    <div class="post-comments">
+                        <span class="view-comments">View all 42 comments</span>
+                        <div class="comment">
+                            <span class="comment-user">user1</span>
+                            <span>Nice post!</span>
+                        </div>
+                        <div class="comment">
+                            <span class="comment-user">user2</span>
+                            <span>Looking good 👍</span>
+                        </div>
+                    </div>
+                    <div class="post-time">
+                        <span>2 HOURS AGO</span>
+                    </div>
+                    <div class="add-comment">
+                        <input type="text" placeholder="Add a comment...">
+                        <button>Post</button>
+                    </div>
+                </article>
+
+                <article class="post">
+                    <div class="post-header">
+                        <div class="post-user">
+                            <img src="https://via.placeholder.com/40" alt="User">
+                            <span>another_user</span>
+                        </div>
+                        <button class="more-options"><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+                    <div class="post-image">
+                        <img src="https://via.placeholder.com/600x400" alt="Post">
+                    </div>
+                    <div class="post-actions">
+                        <button><i class="far fa-heart"></i></button>
+                        <button><i class="far fa-comment"></i></button>
+                        <button><i class="far fa-paper-plane"></i></button>
+                        <button class="save"><i class="far fa-bookmark"></i></button>
+                    </div>
+                    <div class="post-likes">
+                        <span>567 likes</span>
+                    </div>
+                    <div class="post-caption">
+                        <span class="username">another_user</span>
+                        <span>Another example post for our mockup app. #coding #frontend</span>
+                    </div>
+                    <div class="post-comments">
+                        <span class="view-comments">View all 12 comments</span>
+                    </div>
+                    <div class="post-time">
+                        <span>5 HOURS AGO</span>
+                    </div>
+                    <div class="add-comment">
+                        <input type="text" placeholder="Add a comment...">
+                        <button>Post</button>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="user-profile">
+                    <img src="https://via.placeholder.com/60" alt="Profile">
+                    <div>
+                        <span class="username">your_username</span>
+                        <span class="name">Your Name</span>
+                    </div>
+                    <button class="switch">Switch</button>
+                </div>
+                <div class="suggestions">
+                    <div class="suggestions-header">
+                        <span>Suggestions For You</span>
+                        <button>See All</button>
+                    </div>
+                    <div class="suggested-user">
+                        <img src="https://via.placeholder.com/40" alt="User">
+                        <div>
+                            <span>suggested_user1</span>
+                            <span>Followed by user2</span>
+                        </div>
+                        <button>Follow</button>
+                    </div>
+                    <div class="suggested-user">
+                        <img src="https://via.placeholder.com/40" alt="User">
+                        <div>
+                            <span>suggested_user2</span>
+                            <span>New to SocialApp</span>
+                        </div>
+                        <button>Follow</button>
+                    </div>
+                    <div class="suggested-user">
+                        <img src="https://via.placeholder.com/40" alt="User">
+                        <div>
+                            <span>suggested_user3</span>
+                            <span>Followed by user1 + 3 more</span>
+                        </div>
+                        <button>Follow</button>
+                    </div>
+                </div>
+                <footer class="sidebar-footer">
+                    <div class="links">
+                        <a href="#">About</a>
+                        <a href="#">Help</a>
+                        <a href="#">Press</a>
+                        <a href="#">API</a>
+                        <a href="#">Jobs</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
+                        <a href="#">Locations</a>
+                        <a href="#">Top Accounts</a>
+                        <a href="#">Hashtags</a>
+                        <a href="#">Language</a>
+                    </div>
+                    <div class="copyright">
+                        © 2023 SOCIALAPP
+                    </div>
+                </footer>
+            </aside>
+        </main>
+
+        <!-- Bottom Navigation (Mobile) -->
+        <nav class="bottom-nav">
+            <a href="#"><i class="fas fa-home"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-plus-square"></i></a>
+            <a href="#"><i class="fas fa-heart"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+        </nav>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
