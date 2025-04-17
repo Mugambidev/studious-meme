@@ -1,230 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SocialApp - Connect with Friends</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Enhanced meta tags -->
-    <meta name="theme-color" content="#ffffff">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="apple-touch-icon" href="/icon.png">
-</head>
-<body>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
     <div class="app-container">
-        <!-- Header -->
-        <header class="app-header">
-            <div class="header-content">
-                <h1 class="logo">SocialApp</h1>
-                <div class="search-bar">
-                    <input type="text" placeholder="Search...">
-                    <button><i class="fas fa-search"></i></button>
-                </div>
-                <nav class="nav-links">
-                    <a href="#"><i class="fas fa-home"></i></a>
-                    <a href="#"><i class="fas fa-comment"></i></a>
-                    <a href="#"><i class="fas fa-plus-square"></i></a>
-                    <a href="#"><i class="fas fa-compass"></i></a>
-                    <a href="#"><i class="fas fa-heart"></i></a>
-                    <div class="profile-pic">
-                        <img src="https://mighty.tools/mockmind-api/content/cartoon/11.jpg" alt="Profile">
-                    </div>
-                </nav>
-            </div>
-        </header>
-
-        <!-- Main Content -->
-        <main class="main-content">
-            <!-- Stories -->
-            <section class="stories">
-                <div class="story">
-                    <div class="story-circle">
-                        <img src="https://mighty.tools/mockmind-api/content/abstract/47.jpg" alt="User">
-                    </div>
-                    <span>Your Story</span>
-                </div>
-                <div class="story">
-                    <div class="story-circle">
-                        <img src="https://mighty.tools/mockmind-api/content/handdrawn/24.jpg" alt="User">
-                    </div>
-                    <span>floo</span>
-                </div>
-                <div class="story">
-                    <div class="story-circle">
-                        <img src="https://mighty.tools/mockmind-api/content/alien/18.jpg" alt="User">
-                    </div>
-                    <span>drilay</span>
-                </div>
-                <div class="story">
-                    <div class="story-circle">
-                        <img src="https://mighty.tools/mockmind-api/content/human/85.jpg" alt="User">
-                    </div>
-                    <span>lorde</span>
-                </div>
-                <div class="story">
-                    <div class="story-circle">
-                        <img src="https://mighty.tools/mockmind-api/content/human/102.jpg" alt="User">
-                    </div>
-                    <span>byte</span>
-                </div>
-            </section>
-
-            <!-- Posts -->
-            <section class="posts">
-                <article class="post">
-                    <div class="post-header">
-                        <div class="post-user">
-                            <img src="https://mighty.tools/mockmind-api/content/cartoon/10.jpg" alt="User">
-                            <span>cheddar</span>
-                        </div>
-                        <button class="more-options"><i class="fas fa-ellipsis-h"></i></button>
-                    </div>
-                    <div class="post-image">
-                        <img src="https://cdn.pixabay.com/photo/2021/12/04/20/59/animal-6845972_640.jpg" alt="Post">
-                    </div>
-                    <div class="post-actions">
-                        <button><i class="far fa-heart"></i></button>
-                        <button><i class="far fa-comment"></i></button>
-                        <button><i class="far fa-paper-plane"></i></button>
-                        <button class="save"><i class="far fa-bookmark"></i></button>
-                    </div>
-                    <div class="post-likes">
-                        <span>1,234 likes</span>
-                    </div>
-                    <div class="post-caption">
-                        <span class="username">mario</span>
-                        <span>This is Cheddar the dog. #dog #puppy</span>
-                    </div>
-                    <div class="post-comments">
-                        <span class="view-comments">View all 42 comments</span>
-                        <div class="comment">
-                            <span class="comment-user">floo</span>
-                            <span>Nice post!</span>
-                        </div>
-                        <div class="comment">
-                            <span class="comment-user">drilay</span>
-                            <span>Looking good 👍</span>
-                        </div>
-                    </div>
-                    <div class="post-time">
-                        <span>2 HOURS AGO</span>
-                    </div>
-                    <div class="add-comment">
-                        <input type="text" placeholder="Add a comment...">
-                        <button>Post</button>
-                    </div>
-                </article>
-
-                <article class="post">
-                    <div class="post-header">
-                        <div class="post-user">
-                            <img src="https://mighty.tools/mockmind-api/content/human/65.jpg" alt="User">
-                            <span>mylod</span>
-                        </div>
-                        <button class="more-options"><i class="fas fa-ellipsis-h"></i></button>
-                    </div>
-                    <div class="post-image">
-                        <img src="https://cdn.pixabay.com/photo/2025/03/19/19/40/square-9481441_640.jpg" alt="Post">
-                    </div>
-                    <div class="post-actions">
-                        <button><i class="far fa-heart"></i></button>
-                        <button><i class="far fa-comment"></i></button>
-                        <button><i class="far fa-paper-plane"></i></button>
-                        <button class="save"><i class="far fa-bookmark"></i></button>
-                    </div>
-                    <div class="post-likes">
-                        <span>567 likes</span>
-                    </div>
-                    <div class="post-caption">
-                        <span class="username">mylod</span>
-                        <span>Abstract. #feature #painting</span>
-                    </div>
-                    <div class="post-comments">
-                        <span class="view-comments">View all 12 comments</span>
-                    </div>
-                    <div class="post-time">
-                        <span>5 HOURS AGO</span>
-                    </div>
-                    <div class="add-comment">
-                        <input type="text" placeholder="Add a comment...">
-                        <button>Post</button>
-                    </div>
-                </article>
-            </section>
-
-            <!-- Sidebar -->
-            <aside class="sidebar">
-                <div class="user-profile">
-                    <img src="https://mighty.tools/mockmind-api/content/cartoon/11.jpg" alt="Profile">
-                    <div>
-                        <span class="username">Motherboard</span>
-                        <span class="name">snacky_flow</span>
-                    </div>
-                    <button class="switch">Switch</button>
-                </div>
-                <div class="suggestions">
-                    <div class="suggestions-header">
-                        <span>Suggestions For You</span>
-                        <button>See All</button>
-                    </div>
-                    <div class="suggested-user">
-                        <img src="https://mighty.tools/mockmind-api/content/cartoon/23.jpg" alt="User">
-                        <div>
-                            <span>floo</span>
-                            <span>Followed by drilay</span>
-                        </div>
-                        <button>Follow</button>
-                    </div>
-                    <div class="suggested-user">
-                        <img src="https://mighty.tools/mockmind-api/content/cartoon/22.jpg" alt="User">
-                        <div>
-                            <span>drilay</span>
-                            <span>New to SocialApp</span>
-                        </div>
-                        <button>Follow</button>
-                    </div>
-                    <div class="suggested-user">
-                        <img src="https://mighty.tools/mockmind-api/content/cartoon/31.jpg" alt="User">
-                        <div>
-                            <span>spweein</span>
-                            <span>Followed by floo + 3 more</span>
-                        </div>
-                        <button>Follow</button>
-                    </div>
-                </div>
-                <footer class="sidebar-footer">
-                    <div class="links">
-                        <a href="#">About</a>
-                        <a href="#">Help</a>
-                        <a href="#">Press</a>
-                        <a href="#">API</a>
-                        <a href="#">Jobs</a>
-                        <a href="#">Privacy</a>
-                        <a href="#">Terms</a>
-                        <a href="#">Locations</a>
-                        <a href="#">Top Accounts</a>
-                        <a href="#">Hashtags</a>
-                        <a href="#">Language</a>
-                    </div>
-                    <div class="copyright">
-                        © 2025 SOCIALAPP
-                    </div>
-                </footer>
-            </aside>
-        </main>
-
-        <!-- Bottom Navigation (Mobile) -->
-        <nav class="bottom-nav">
-            <a href="#"><i class="fas fa-home"></i></a>
-            <a href="#"><i class="fas fa-search"></i></a>
-            <a href="#"><i class="fas fa-plus-square"></i></a>
+      <!-- Header -->
+      <header class="app-header">
+        <div class="header-content">
+          <h1 class="logo">SocialApp</h1>
+          <div class="search-bar">
+            <input type="text" placeholder="Search..." id="searchInput" />
+            <button id="searchButton"><i class="fas fa-search"></i></button>
+          </div>
+          <nav class="nav-links">
+            <a href="#" class="active"><i class="fas fa-home"></i></a>
+            <a href="#"><i class="fas fa-comment"></i></a>
+            <a href="#" id="createPost"><i class="fas fa-plus-square"></i></a>
+            <a href="#"><i class="fas fa-compass"></i></a>
             <a href="#"><i class="fas fa-heart"></i></a>
-            <a href="#"><i class="fas fa-user"></i></a>
-        </nav>
+            <div class="profile-pic">
+              <img
+                src="https://mighty.tools/mockmind-api/content/cartoon/11.jpg"
+                alt="Profile"
+                id="userProfile"
+              />
+            </div>
+            <button id="themeToggle"><i class="fas fa-moon"></i></button>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Stories -->
+        <section class="stories">
+          <div class="story">
+            <div class="story-circle">
+              <img
+                src="https://mighty.tools/mockmind-api/content/abstract/47.jpg"
+                alt="User"
+              />
+            </div>
+            <span>Your Story</span>
+          </div>
+          <div class="story">
+            <div class="story-circle">
+              <img
+                src="https://mighty.tools/mockmind-api/content/handdrawn/24.jpg"
+                alt="User"
+              />
+            </div>
+            <span>floo</span>
+          </div>
+          <div class="story">
+            <div class="story-circle">
+              <img
+                src="https://mighty.tools/mockmind-api/content/alien/18.jpg"
+                alt="User"
+              />
+            </div>
+            <span>drilay</span>
+          </div>
+          <div class="story">
+            <div class="story-circle">
+              <img
+                src="https://mighty.tools/mockmind-api/content/human/85.jpg"
+                alt="User"
+              />
+            </div>
+            <span>lorde</span>
+          </div>
+          <div class="story">
+            <div class="story-circle">
+              <img
+                src="https://mighty.tools/mockmind-api/content/human/102.jpg"
+                alt="User"
+              />
+            </div>
+            <span>byte</span>
+          </div>
+        </section>
+
+        <!-- Posts -->
+        <section class="posts" id="postsContainer">
+          <!-- Posts will be loaded dynamically -->
+        </section>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <div class="user-profile">
+            <img
+              src="https://mighty.tools/mockmind-api/content/cartoon/11.jpg"
+              alt="Profile"
+            />
+            <div>
+              <span class="username">Motherboard</span>
+              <span class="name">snacky_flow</span>
+            </div>
+            <button class="switch">Switch</button>
+          </div>
+          <div class="suggestions">
+            <div class="suggestions-header">
+              <span>Suggestions For You</span>
+              <button>See All</button>
+            </div>
+            <div class="suggested-users" id="suggestedUsers">
+              <!-- Suggested users will be loaded dynamically -->
+            </div>
+          </div>
+          <footer class="sidebar-footer">
+            <div class="links">
+              <a href="#">About</a>
+              <a href="#">Help</a>
+              <a href="#">Press</a>
+              <a href="#">API</a>
+              <a href="#">Jobs</a>
+              <a href="#">Privacy</a>
+              <a href="#">Terms</a>
+              <a href="#">Locations</a>
+              <a href="#">Top Accounts</a>
+              <a href="#">Hashtags</a>
+              <a href="#">Language</a>
+            </div>
+            <div class="copyright">© 2025 SOCIALAPP</div>
+          </footer>
+        </aside>
+      </main>
+
+      <!-- Bottom Navigation (Mobile) -->
+      <nav class="bottom-nav">
+        <a href="#" class="active"><i class="fas fa-home"></i></a>
+        <a href="#"><i class="fas fa-search"></i></a>
+        <a href="#" id="createPostMobile"><i class="fas fa-plus-square"></i></a>
+        <a href="#"><i class="fas fa-heart"></i></a>
+        <a href="#"><i class="fas fa-user"></i></a>
+      </nav>
+
+      <!-- Create Post Modal -->
+      <div class="modal" id="createPostModal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Create New Post</h3>
+            <button class="close-modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="upload-area" id="uploadArea">
+              <i class="fas fa-cloud-upload-alt"></i>
+              <p>Drag photos and videos here</p>
+              <button class="btn-select">Select from computer</button>
+              <input
+                type="file"
+                id="fileInput"
+                accept="image/*"
+                style="display: none"
+              />
+            </div>
+            <div class="post-preview" id="postPreview" style="display: none">
+              <img id="previewImage" src="" alt="Preview" />
+              <div class="post-caption-input">
+                <textarea
+                  placeholder="Write a caption..."
+                  id="postCaption"
+                ></textarea>
+                <button class="btn-post" id="submitPost">Share</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Story Viewer Modal -->
+      <div class="modal" id="storyViewerModal">
+        <div class="modal-content story-viewer">
+          <div class="story-header">
+            <div class="story-user">
+              <img src="" alt="User" id="storyUserImage" />
+              <span id="storyUsername"></span>
+            </div>
+            <button class="close-modal">&times;</button>
+          </div>
+          <div class="story-content">
+            <img src="" alt="Story" id="storyImage" />
+          </div>
+        </div>
+      </div>
     </div>
 
-    <script src="scripts/main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
